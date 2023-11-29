@@ -1,0 +1,124 @@
+Project Description: TicTacToe Game in Java
+
+This project involves the creation of a console-based TicTacToe game using Java, demonstrating fundamental principles of object-oriented programming. The game consists of several classes to represent the game board, players, and the main game launcher.
+
+
+1. TicTocToe Class:
+
+Initializes a 3x3 game board and displays it.
+Manages the game board state and provides methods for checking wins and draws.
+Implements logic for checking wins in rows, columns, and diagonals.
+
+
+2. Player Class (Abstract):
+
+An abstract class defining common attributes like player name and symbol.
+Contains an abstract method makeMove() for making a move, to be implemented by subclasses.
+
+
+3. HumanPlayer Class (Extends Player):
+
+Represents a human player.
+Takes user input for row and column to make a move.
+Ensures the move is valid and updates the game board.
+
+
+4. AIPlayer Class (Extends Player):
+
+Represents an AI player.
+Generates random moves for the AI to simulate computer opponent behavior.
+Ensures the generated move is valid and updates the game board.
+
+
+5. LaunchGame Class:
+
+The main class responsible for starting and running the game.
+Creates instances of the TicTocToe game, a human player, and an AI player.
+Alternates turns between players, allowing them to make moves and updating the board.
+Checks for win or draw conditions after each move, terminating the game if necessary.
+
+
+
+
+
+
+Key Features:
+
+Clear separation of concerns with distinct classes for the game, players, and launcher.
+User-friendly interaction with the HumanPlayer class taking user input.
+AIPlayer class simulates a computer opponent by generating random moves.
+Demonstrates principles of encapsulation, inheritance, and polymorphism in an object-oriented context.
+Robust error handling to ensure valid moves and prevent out-of-bounds access.
+An intuitive display of the game board after each move for a better user experience.
+
+
+Skills Demonstrated:
+
+Proficiency in Java programming, emphasizing object-oriented concepts.
+Implementation of game logic for win and draw conditions.
+User input handling and error validation.
+Randomization for AI decision-making.
+Modular and organized code structure for maintainability.
+Conclusion:
+
+This TicTacToe project serves as a comprehensive illustration of Java programming skills, particularly in object-oriented design, user interaction, and game logic implementation. It showcases a well-structured and readable codebase suitable for educational purposes or as a foundation for expanding into more complex game development projects.
+
+
+OUTPUT::
+
+———————
+| | | |
+———————
+| | | |
+———————
+| | | |
+———————
+It's Pradeep's turn:
+Please enter the row and column numbers separated by space:
+0 0
+———————
+|X| | |
+———————
+| | | |
+———————
+| | | |
+———————
+It's Robo's turn:
+———————
+|X| | |
+———————
+| | | |
+———————
+| |O| |
+———————
+It's Pradeep's turn:
+Please enter the row and column numbers separated by space:
+1 1
+———————
+|X| | |
+———————
+| |X| |
+———————
+| |O| |
+———————
+It's Robo's turn:
+———————
+|X| | |
+———————
+| |X|O|
+———————
+| |O| |
+———————
+It's Pradeep's turn:
+Please enter the row and column numbers separated by space:
+2 2
+———————
+|X| | |
+———————
+| |X|O|
+———————
+| |O|X|
+———————
+Pradeep has won
+
+
